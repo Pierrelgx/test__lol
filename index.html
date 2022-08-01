@@ -32,22 +32,32 @@
         <textarea rows="5" placeholder="Écris-moi une histoire.."></textarea>
       </div>
 
-      <div>
+      <!-- <div>
         <button  onclick="return validateForm()" >Submit</button>
             <span id="submit-error"></span>
 
-      </div>
+      </div> -->
+
+      <div class="popup" onclick="myFunction()">
+      <button   onclick="return validateForm()" >Submit</button>
+            <span id="submit-error"></span>
+        <span class="popuptext" id="myPopup">Bouton fonctionnel ❤️</span>
+    </div>
+
+
    
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_autoresponse" value="Hey ! 😍 Merci d'avoir utilisé le form ! La biiiiise">
       
    
   </form>
+  
 
-
+    
   
   
   </div>
+  
    <script src="script.js"></script>
 
    
