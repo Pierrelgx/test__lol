@@ -13,7 +13,7 @@ function validateName(){
         nameError.innerHTML = "Prenom [espace] Nom ";
         return false;
     }
-    nameError.innerHTML = '<i>✅</i>';
+    nameError.innerHTML = "✅";
     return true;
 }
 
@@ -29,7 +29,7 @@ function validateEmail(){
         emailError.innerHTML = "Email invalide"
         return false;
     }
-    emailError.innerHTML = '<i>✅</i>';
+    emailError.innerHTML = "✅";
     return true;
 
 }
