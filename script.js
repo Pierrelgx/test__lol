@@ -2,20 +2,20 @@ let nameError = document.getElementById('name-error');
 let emailError = document.getElementById('email-error');
 let submitError = document.getElementById('submit-error');
 
-function validateName(){
-    var name = document.getElementById('contact-name').value;
+// function validateName(){
+//     var name = document.getElementById('contact-name').value;
 
-    if(name.lenght == 0){
-        nameError.innerHTML = "Le prénom est obligatoire ";
-        return false;
-    }
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-        nameError.innerHTML = "Prenom [espace] Nom ";
-        return false;
-    }
-    nameError.innerHTML = "✅";
-    return true;
-}
+//     if(name.lenght == 0){
+//         nameError.innerHTML = "Le prénom est obligatoire ";
+//         return false;
+//     }
+//     if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+//         nameError.innerHTML = "⛔️";
+//         return false;
+//     }
+//     nameError.innerHTML = "✅";
+//     return true;
+// }
 
 function validateEmail(){
     var email = document.getElementById('contact-email').value;
@@ -26,7 +26,7 @@ function validateEmail(){
     }
     
     if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
-        emailError.innerHTML = "Email invalide"
+        emailError.innerHTML = "⛔️"
         return false;
     }
     emailError.innerHTML = "✅";
