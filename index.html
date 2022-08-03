@@ -14,22 +14,22 @@
       <!-- <i class="fas fa-paper-plane"></i> -->
 
       <div class="input-group">
-        <label>Ton prénom</label>
+        <label>Ton nom</label>
         <input type="text" placeholder="Tony Stark" id="contact-name" onkeyup="validateName()">
         <span id="name-error"></span>
       </div>
 
 
       <div class="input-group">
-        <label>Email</label>
-        <input type="email" name="mail" placeholder="tony@stark.com" id="contact-email" onkeyup="validateEmail()">
+        <label>Ton email</label>
+        <input type="email" name="mail" placeholder="Tony@Stark.com" id="contact-email" onkeyup="validateEmail()">
         <span id="email-error"></span>
 
       </div>   
 
       <div class="input-group">
-        <label>Message</label>
-        <textarea rows="1" placeholder="Écris-moi une histoire.."></textarea>
+        <label>Ton message</label>
+        <textarea rows="1" placeholder="Ton histoire..."></textarea>
       </div>
 
       <!-- <div>
@@ -38,16 +38,25 @@
 
       </div> -->
 
-      <div class="popup" onclick="myFunction()">
-      <button   onclick="return validateForm()" >Submit</button>
+      <div class="popup">
+        <button type="button" onclick="return validateForm()" >Submit</button>
             <span id="submit-error"></span>
-        <span class="popuptext" id="myPopup">Bouton fonctionnel ❤️</span>
-    </div>
+            <!-- <span class="popuptext" id="myPopup">ok</span>
+            <span class="popuptextFailed" id="myPopupFailed">pas ok</span> -->
+      </div>
 
 
    
+
+
+
+
+
+
+
+
+
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_autoresponse" value="Hey ! 😍 Merci d'avoir utilisé le form ! La biiiiise">
       
    
   </form>
