@@ -37,11 +37,13 @@ function validateEmail(){
 
 function validateForm(){
     if(!validateName() || !validateEmail()){
-        submitError.style.display = "block";
-        submitError.innerHTML = "⚠️ Un champ n'est pas correct";
-        setTimeout(function(){submitError.style.display = "none"}, 4000);
-        return false;
+        // console.log("test", validateForm);
+        document.getElementById("test").innerHTML = " &nbsp ⛔️ Attention il manque quelque chose &nbsp ";
+    } else {
+        console.log("blabla");
+        document.getElementById("test").innerHTML = " &nbsp ✅ Formulaire envoyé ! &nbsp ";
     }
+    
 }
 
 function myFunction() {
@@ -57,15 +59,15 @@ function myFunctionFailed() {
 }
 
 
-function test() {
-    let result;
-    if (validateName() == true && validateEmail() == true) {
-      result = {myFunction}
-    } else {
-      result = {myFunctionFailed}
-    }
-    return result;
-  }
+// function test() {
+//     let result;
+//     if (validateName() == true && validateEmail() == true) {
+//       result = {myFunction}
+//     } else {
+//       result = {myFunctionFailed}
+//     }
+//     return result;
+//   }
 
 
   
